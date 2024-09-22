@@ -15,34 +15,37 @@
 
 <body>
 
-  <nav class="navbar navbar-bg navbar-dark navbar-expand-lg" style="--navbar-bg: #081921;">
-    <div class="container py-15">
+  <!-- desktop and top -->
+
+  <nav class="navbar navbar-bg navbar-dark navbar-expand-lg" style="--navbar-bg: #081921;" id="top-nav">
+    <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/img/o2media-h-dark.png" width="180" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu"
+        aria-controls="mobile-menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#">SERVICES</a>
+            <a class="nav-link active" href="#services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT US</a>
+            <a class="nav-link" href="#about-us">ABOUT US</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">PROGRAMS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">WORK</a>
+            <a class="nav-link" href="#work">WORK</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TEAM</a>
+            <a class="nav-link" href="#team">TEAM</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="#contact-us">CONTACT</a>
           </li>
           <li class="nav-item ms-3">
             <a class="nav-link d-flex gap-2" href="#">
@@ -55,48 +58,117 @@
     </div>
   </nav>
 
-  <main data-bs-spy="scroll" data-bs-target="#side-scroll-nav" data-bs-root-margin="0px 0px -40%"
+  <!-- Mobile Mebu -->
+  <div class="offcanvas offcanvas-top min-vh-100" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu"
+    style="--bs-offcanvas-bg:#051923">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav navbar-dark text-center mx-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#">
+            <i class="bi bi-person-circle me-2"></i>
+            Log In
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#services">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PROGRAMS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">WORK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">CONTACT</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- side menu  -->
+  <aside id="side-scroll-nav" class="navbar position-fixed">
+    <ul class="navbar-nav navbar-dark d-flex flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-us">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#work">WORK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#clients">CLIENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team">TEAM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#facts">FACTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-us">CONTACT</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main data-bs-spy="scroll" data-bs-target="#side-scroll-nav" data-bs-root-margin="0px 0px 45%" data-bs-offset="0"
     data-bs-smooth-scroll="true" tabindex="0">
-    <section>
-      <div class="section-background position-fixed top-0">
+
+    <section id="home">
+      <div class="section-background position-fixed">
         <img class="banner" src="assets/img/bg-1.webp" alt="Bg Img">
       </div>
       <div class="container">
         <div class="section row align-items-center">
-          <div class="hero ps-5rem">
-            <h1 class="hero-title text-dark-black mb-0">MAKING <br> CONNECTIONS</h1>
-            <h1 class="hero-title text-white mb-5">DELIVERING <br> RESULTS</h1>
-            <p class="text-20 fw-bold text-white pt-3 letter-spacing-5px">BUILDING YOUR SOCIAL BRAND</p>
+          <div class="hero  ps-4 ps-md-5rem animation-block">
+            <h1 class="hero-title text-dark-black mb-0 fade-animation">MAKING <br> CONNECTIONS</h1>
+            <h1 class="hero-title text-white md-3 mb-md-5 fade-animation">DELIVERING <br> RESULTS</h1>
+            <p class="text-20 fw-bold text-white pt-3 letter-spacing-5px fade-animation">BUILDING YOUR SOCIAL BRAND</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section position-relative">
+    <section class="position-relative" id="services">
       <div class="section-head py-5" style="--section-head-bg: #051923;">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-white title-top-bar my-4"
+        <div class="container pt-5 ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-white title-top-bar my-4 slide-from-left-animation"
             style="--bar-bg: #fff; --bar-height:12px; --bar-width:50px; --bar-distance:-40px">
             OUR <br> SERVICES</h1>
           <div class="row py-5">
-            <div class="col-3">
-              <h3 class="fs-6 title-top-bar text-white"
-                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">SOCIAL <br> MEDIA
+            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                SOCIAL <br> MEDIA
               </h3>
             </div>
-            <div class="col-3">
-              <h3 class="fs-6 title-top-bar text-white"
+            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
                 style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">CREATIVE <br>
                 STRATEGY
               </h3>
             </div>
-            <div class="col-3">
-              <h3 class="fs-6 title-top-bar text-white"
+            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
                 style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">PUBLIC <br>
                 RELATIONS</h3>
             </div>
-            <div class="col-3">
-              <h3 class="fs-6 title-top-bar text-white"
+            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
                 style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">CONTENT <br>
                 MARKETING
               </h3>
@@ -104,12 +176,16 @@
           </div>
         </div>
       </div>
-      <div class="section-body section-bg" style="--section-bg: url(../img/bg-2.webp);">
+    </section>
+
+    <section class="position-relative" id="about-us">
+      <div class="section-body section-bg pb-md-5" style="--section-bg: url(../img/bg-2.webp);">
         <div class="container py-5">
-          <div class="row align-items-center ps-5">
-            <h1 class="section-title text-dark-black title-top-bar my-5"
+          <div class="row align-items-center ps-4 ps-md-5 pb-md-5 animation-block">
+            <h1 class="section-title text-dark-black title-top-bar mb-4 mb-md-5 mt-5 slide-from-left-animation"
               style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">WHO <br> WE ARE</h1>
-            <p class="w-75 text-dark-black">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+            <p class="w-75 text-dark-black fade-animation">I'm a paragraph. Click here to add your own text and edit me.
+              It’s easy.
               Just click “Edit
               Text” or double
               click me to
@@ -121,17 +197,17 @@
       </div>
     </section>
 
-    <section class="section position-relative">
-      <div class="section-head py-5" style="--section-head-bg: #92b6d5;">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-dark-black title-top-bar"
+    <section class="section position-relative" id="work">
+      <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #92b6d5;">
+        <div class="container pt-5 ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
             style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
             OUR <br> WORK
           </h1>
           <div class="row py-4">
-            <div class="col-7">
-              <p class="m-0">I'm a paragraph. Click here to add your own text and edit me.</p>
-              <p class="m-0">
+            <div class="col-10 col-md-7">
+              <p class="m-0 fade-animation">I'm a paragraph. Click here to add your own text and edit me.</p>
+              <p class="m-0 fade-animation">
                 It’s easy. Just click “Edit Text” or double click me to add your
                 own content and make changes to the font.
               </p>
@@ -139,10 +215,10 @@
           </div>
         </div>
       </div>
-      <div class="section-body mb-2">
+      <div class="section-body">
         <div class="row align-items-center">
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-1.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -151,8 +227,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-2.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -161,8 +237,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-3.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -171,8 +247,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-4.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -181,8 +257,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-5.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -191,8 +267,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-4 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/box-6.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -205,17 +281,17 @@
       </div>
     </section>
 
-    <section class="section bg-white position-relative">
-      <div class="section-head py-5" style="--section-head-bg: #92b6d5;">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-dark-black title-top-bar"
+    <section class="section bg-white position-relative" id="clients">
+      <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #92b6d5;">
+        <div class="container pt-5 ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
             style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
             OUR <br> CLIENTS
           </h1>
           <div class="row py-4">
-            <div class="col-7">
-              <p class="m-0">I'm a paragraph. Click here to add your own text and edit me.</p>
-              <p class="m-0">
+            <div class="col-10 col-md-7">
+              <p class="m-0 fade-animation">I'm a paragraph. Click here to add your own text and edit me.</p>
+              <p class="m-0 fade-animation">
                 It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
                 font.
               </p>
@@ -225,47 +301,47 @@
       </div>
       <div class="section-body" style="min-height: auto;">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-1.webp" alt="">
+          <div class="row mt-5 mt-md-0 align-items-center">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-left-animation" src="assets/img/company-1.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-2.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-right-animation" src="assets/img/company-2.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-3.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-left-animation" src="assets/img/company-3.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-4.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-right-animation" src="assets/img/company-4.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-5.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-left-animation" src="assets/img/company-5.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-6.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-right-animation" src="assets/img/company-6.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-7.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-left-animation" src="assets/img/company-7.webp" alt="">
             </div>
-            <div class="col-3 mb-5">
-              <img src="assets/img/company-8.webp" alt="">
+            <div class="col-6 col-md-3 mb-5 animation-block">
+              <img class="img-fluid slide-from-right-animation" src="assets/img/company-8.webp" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="position-relative">
-      <div class="section-head py-5" style="--section-head-bg: #DADADA;">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-dark-black title-top-bar"
-            style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
+    <section class="position-relative" id="team">
+      <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #DADADA;">
+        <div class="container pt-5 ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation" id="
+            style=" --bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
             OUR <br> TEAM
           </h1>
           <div class="row py-4">
-            <div class="col-7">
-              <p class="m-0">I'm a paragraph. Click here to add your own text and edit me.</p>
-              <p class="m-0">
+            <div class="col-10 col-md-7">
+              <p class="m-0 fade-animation">I'm a paragraph. Click here to add your own text and edit me.</p>
+              <p class="m-0 fade-animation">
                 It’s easy. Just click “Edit Text” or double click me to add your
                 own content and make changes to the font.
               </p>
@@ -273,10 +349,11 @@
           </div>
         </div>
       </div>
-      <div class="section-body" style="min-height: auto; margin-bottom: 50px;">
+
+      <div class="section-body" style="min-height: auto;">
         <div class="row align-items-center">
-          <div class="col-3 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-3 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/team-1.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -285,8 +362,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-3 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/team-2.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -295,8 +372,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-3 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/team-3.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -305,8 +382,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3 p-0">
-            <div class="card rounded-0 border-0 bg-dark text-white">
+          <div class="col-12 col-md-3 p-0 animation-block">
+            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
               <img class="card-img rounded-0" src="assets/img/team-4.webp" alt="Card image">
               <div
                 class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
@@ -319,26 +396,26 @@
       </div>
     </section>
 
-    <section class="position-relative">
-      <div class="section-body section-bg py-5 mb-2" style="--section-bg: url(../img/bg-3.webp);">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-dark-black title-top-bar mb-4 mt-5"
+    <section class="position-relative" id="facts">
+      <div class="section-body section-bg py-0 py-md-5" style="--section-bg: url(../img/bg-3.webp);">
+        <div class="container pt-5  ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-dark-black title-top-bar mb-4 mt-5 slide-from-left-animation"
             style="--bar-bg: #fff; --bar-height:12px; --bar-width:50px; --bar-distance:-40px">
             FUN <br> FACTS</h1>
-          <div class="row py-5">
-            <div class="col-3">
+          <div class="row py-0 py-md-5">
+            <div class="col-6 col-md-3  mb-5 mb-md-0 fade-down-animation">
               <h3 class="text-white fs-0 fw-bold mb-4">106</h3>
               <h3 class="fs-6 fw-bolder text-white" style="letter-spacing: 0.2em;">HAPPY <br> CLIENTS</h3>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3  mb-5 mb-md-0 fade-down-animation">
               <h3 class="text-white fs-0 fw-bold mb-4">198</h3>
               <h3 class="fs-6 fw-bolder text-white" style="letter-spacing: 0.2em;">WEBSITES <br> LAUNCHED</h3>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3  mb-5 mb-md-0 fade-down-animation">
               <h3 class="text-white fs-0 fw-bold mb-4">506</h3>
               <h3 class="fs-6 fw-bolder text-white" style="letter-spacing: 0.2em;">SOCIAL <br> CAMPAIGNS</h3>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3  mb-5 mb-md-0 fade-down-animation">
               <h3 class="text-white fs-0 fw-bold mb-4">1603</h3>
               <h3 class="fs-6 fw-bolder text-white" style="letter-spacing: 0.2em;">CUPS OF <br> COFFEE</h3>
             </div>
@@ -347,28 +424,19 @@
       </div>
     </section>
 
-    <section class="bg-white position-relative pb-5">
-      <div class="section-head py-5" style="--section-head-bg: #fff;">
-        <div class="container pt-5 ps-5">
-          <h1 class="section-title text-dark-black title-top-bar"
+    <section class="bg-white position-relative pb-4 pb-md-5" id="contact-us">
+      <div class="section-head  py-4 py-md-5 pt-5" style="--section-head-bg: #fff;">
+        <div class="container pt-5  ps-4 ps-md-5 animation-block">
+          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
             style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
             GET IN <br> TOUCH
           </h1>
-          <!-- <div class="row py-4">
-            <div class="col-7">
-              <p class="m-0">I'm a paragraph. Click here to add your own text and edit me.</p>
-              <p class="m-0">
-                It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the
-                font.
-              </p>
-            </div>
-          </div> -->
         </div>
       </div>
-      <div class="section-body pb-5" style="min-height: auto;">
+      <div class="section-body pb-md-5" style="min-height: auto;">
         <div class="container">
           <div class="row">
-            <div class="col-6 ps-5">
+            <div class="col-12 col-md-6 px-4 px-md-5 mb-5 mb-md-0">
               <form action="">
                 <div class="mb-2">
                   <label for="firstName" class="form-label">First Name *</label>
@@ -392,19 +460,19 @@
                     id="message" style="resize: none;"></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary ms-auto d-block">Submit</button>
+                  <button type="submit" class="btn btn-primary submit-btn ms-auto d-block">Submit</button>
                 </div>
               </form>
             </div>
-            <div class="col-6 ps-5">
-              <h3 class="fs-6 letter-spacing-1.5px fw-bold">We can't wait to hear from you</h3>
-              <address>
+            <div class="col-12 col-md-6  ps-4 ps-md-5 animation-block">
+              <h3 class="fs-6 letter-spacing-1.5px fw-bold fade-animation">We can't wait to hear from you</h3>
+              <address class="fade-animation">
                 500 Terry Francine Street,<br>
                 CA 94158 <br>
                 San Francisco,
               </address>
 
-              <address>
+              <address class="fade-animation">
                 <a class="text-dark-black text-decoration-none" href="mailto:info@mysite.com"><b>info@mysite.com</b></a>
                 <br>
                 <a class="text-dark-black text-decoration-none" href="tel:123-456-7890"><b>123-456-7890</b></a>
@@ -415,15 +483,14 @@
       </div>
     </section>
 
+    <div id="scroll-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
     <footer class="footer-bg py-5" style="--footer-bg: #003554;">
       <div class="container">
-        <div class="row">
-          <div class="col-6 ps-5">
-            <p class="m-0 text-white"> &copy; 2035 by SociaLight.</p>
-            <p class="m-0 text-white">Powered and secured by <a class="text-white text-decoration-none" href="#">Wix</a>
-            </p>
-          </div>
-          <div class="col-6 ps-5">
+        <div class="row flex-md-column-reverse">
+          <div class="col-12 col-md-6 mb-4 mb-md-0 ps-4 ps-md-5">
             <p class="text-white">Be a SociaLight and Follow Us:</p>
             <div class="d-flex align-items-center gap-3 text-white">
               <a class="text-white fs-3" href="#"> <i class="fa-brands fa-facebook-f"></i> </a>
@@ -432,6 +499,12 @@
               <a class="text-white fs-3" href="#"> <i class="fa-brands fa-youtube"></i> </a>
               <a class="text-white fs-3" href="#"> <i class="fa-brands fa-pinterest-p"></i> </a>
             </div>
+          </div>
+
+          <div class="col-12 col-md-6 ps-4 ps-md-5">
+            <p class="m-0 text-white"> &copy; 2035 by SociaLight.</p>
+            <p class="m-0 text-white">Powered and secured by <a class="text-white text-decoration-none" href="#">Wix</a>
+            </p>
           </div>
         </div>
       </div>
@@ -444,12 +517,15 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
       gsap.registerPlugin(ScrollTrigger)
     });
+
   </script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
