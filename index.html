@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="assets/fonts/HelveticaNeue/HelveticaNeueBold.ttf" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -17,41 +18,35 @@
 
   <!-- desktop and top -->
 
-  <nav class="navbar navbar-bg navbar-dark navbar-expand-lg" style="--navbar-bg: #081921;" id="top-nav">
+  <nav class="navbar navbar-dark navbar-expand-lg" style="--navbar-bg: #081921;" id="top-nav">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/img/o2media-h-dark.png" width="180" alt="">
+        <img src="assets/img/o2media-h.png" width="180" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu"
         aria-controls="mobile-menu" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#services">SERVICES</a>
+            <a class="nav-link active" href="#home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about-us">ABOUT US</a>
+            <a class="nav-link" href="#who">WHO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">PROGRAMS</a>
+            <a class="nav-link" href="#what">WHAT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#work">WORK</a>
+            <a class="nav-link" href="#how">HOW</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#team">TEAM</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-us">CONTACT</a>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="nav-link d-flex gap-2" href="#">
-              <i class="bi bi-person-circle"></i>
-              Log In
-            </a>
+            <a class="nav-link" href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -66,31 +61,24 @@
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav navbar-dark text-center mx-auto mb-2 mb-lg-0">
-        <li class="nav-item ms-3">
-          <a class="nav-link" href="#">
-            <i class="bi bi-person-circle me-2"></i>
-            Log In
-          </a>
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#services">SERVICES</a>
+          <a class="nav-link" href="#who">WHO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-us">ABOUT US</a>
+          <a class="nav-link" href="#what">WHAT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PROGRAMS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">WORK</a>
+          <a class="nav-link" href="#how">HOW</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#team">TEAM</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact-us">CONTACT</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
         </li>
-
       </ul>
     </div>
   </div>
@@ -102,25 +90,19 @@
         <a class="nav-link" href="#home">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#services">SERVICES</a>
+        <a class="nav-link" href="#who">WHO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about-us">ABOUT US</a>
+        <a class="nav-link" href="#what">WHAT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#work">WORK</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#clients">CLIENTS</a>
+        <a class="nav-link" href="#how">HOW</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#team">TEAM</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#facts">FACTS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact-us">CONTACT</a>
+        <a class="nav-link" href="#contact">CONTACT</a>
       </li>
     </ul>
   </aside>
@@ -130,74 +112,164 @@
 
     <section id="home">
       <div class="section-background position-fixed">
-        <img class="banner" src="assets/img/bg-1.webp" alt="Bg Img">
+        <img class="banner" src="assets/img/Background_home.svg" alt="Bg Img">
       </div>
       <div class="container">
         <div class="section row align-items-center">
           <div class="hero  ps-4 ps-md-5rem animation-block">
-            <h1 class="hero-title text-dark-black mb-0 fade-animation">MAKING <br> CONNECTIONS</h1>
-            <h1 class="hero-title text-white md-3 mb-md-5 fade-animation">DELIVERING <br> RESULTS</h1>
-            <p class="text-20 fw-bold text-white pt-3 letter-spacing-5px fade-animation">BUILDING YOUR SOCIAL BRAND</p>
+            <h1 class="hero-title mb-0 fade-animation" style="color: #003554;">STRATEGIC <br> OPTIMIZATIONS</h1>
+            <h1 class="hero-title md-3 mb-md-5 fade-animation" style="color: #006494;">DRIVING <br> RESULTS</h1>
+            <p class="text-20 fw-bold pt-3 letter-spacing-5px fade-animation" style="color: #006494;">THAT IGNITES BRAND
+              GROWTH</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="position-relative" id="services">
+    <section class="position-relative" id="who">
+      <div class="section-body section-bg pb-md-5" style="--section-bg: url('../img/Background_Who we are.jpg');">
+        <div class="container py-5 z-1 position-relative">
+          <div class="row align-items-center ps-4 ps-md-5 pb-md-5 animation-block">
+            <h1 class="section-title title-top-dots mb-4 mb-md-5 mt-5 slide-from-left-animation"
+              style="color: #003554;">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              WHO <br> WE ARE
+            </h1>
+            <p class="fade-animation fw-bold" style="color: #003554;">Our approach guarantees that your media investment
+              works harder,
+              delivering measurable results</p>
+            <p class="fade-animation" style="color: #006494;">We transform brand connections and
+              energize consumer
+              engagement by delivering dynamic advertising experiences that help
+              build deep brand loyalty and amplify impact. We set the standard in digital advertising with creativity,
+              integrity, and
+              excellence, maximizing your media budget through strategic optimization and advanced analytics. By
+              fine-tuning campaigns
+              within and across platforms, we create better performance and efficiencies with a true omni channel
+              approach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative" id="what">
       <div class="section-head py-5" style="--section-head-bg: #051923;">
-        <div class="container pt-5 ps-4 ps-md-5 animation-block">
-          <h1 class="section-title text-white title-top-bar my-4 slide-from-left-animation"
-            style="--bar-bg: #fff; --bar-height:12px; --bar-width:50px; --bar-distance:-40px">
-            OUR <br> SERVICES</h1>
-          <div class="row py-5">
-            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+        <div class="container pt-5 ps-5 animation-block">
+          <h1 class="section-title text-white title-top-dots my-4 slide-from-left-animation">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            WHAT <br> WE DO
+          </h1>
+          <div class="row pt-5">
+            <div class="col-6 col-md-4 mb-5 pb-3">
               <h3 class="fs-6 title-top-bar text-white fade-down-animation"
                 style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
-                SOCIAL <br> MEDIA
+                MEDIA <br> STRATEGY
               </h3>
             </div>
-            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+            <div class="col-6 col-md-4 mb-5 pb-3">
               <h3 class="fs-6 title-top-bar text-white fade-down-animation"
-                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">CREATIVE <br>
-                STRATEGY
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                MEDIA BUYING <br>& EXECUTION
               </h3>
             </div>
-            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+            <div class="col-6 col-md-4 mb-5 pb-3">
               <h3 class="fs-6 title-top-bar text-white fade-down-animation"
-                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">PUBLIC <br>
-                RELATIONS</h3>
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                MEASUREMENT <br> & REPORTING
+              </h3>
             </div>
-            <div class="col-6 col-md-3 mb-5 mb-md-0 pb-3 pb-md-0">
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-6 col-md-2 mb-5 pb-3">
               <h3 class="fs-6 title-top-bar text-white fade-down-animation"
-                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">CONTENT <br>
-                MARKETING
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                PAID <br> SOCIAL
+              </h3>
+            </div>
+            <div class="col-6 col-md-2 mb-5 pb-3">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                DIGITAL <br> OUT OF <br> HOME
+              </h3>
+            </div>
+            <div class="col-6 col-md-2 mb-5 pb-3">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                DISPLAY<br> & NATIVE
+              </h3>
+            </div>
+            <div class="col-6 col-md-2 mb-5 pb-3">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                MOBILE <br> APP
+              </h3>
+            </div>
+            <div class="col-6 col-md-2 mb-5 pb-3">
+              <h3 class="fs-6 title-top-bar text-white fade-down-animation"
+                style="--bar-bg: #4E5AC3; --bar-height:8px; --bar-width:40px; --bar-distance:-30px">
+                CTV <br> & AUDIO
               </h3>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-    <section class="position-relative" id="about-us">
-      <div class="section-body section-bg pb-md-5" style="--section-bg: url(../img/bg-2.webp);">
-        <div class="container py-5">
+    <section class="position-relative" id="how">
+      <div class="section-body section-bg pb-md-5"
+        style="--section-bg: url('../img/Background_How we do it.jpg'); --opacity: 0.75;">
+        <div class="container py-5 z-1 position-relative">
           <div class="row align-items-center ps-4 ps-md-5 pb-md-5 animation-block">
-            <h1 class="section-title text-dark-black title-top-bar mb-4 mb-md-5 mt-5 slide-from-left-animation"
-              style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">WHO <br> WE ARE</h1>
-            <p class="w-75 text-dark-black fade-animation">I'm a paragraph. Click here to add your own text and edit me.
-              It’s easy.
-              Just click “Edit
-              Text” or double
-              click me to
-              add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your
-              page. I’m a
-              great place for you to tell a story and let your users know a little more about you.</p>
+            <h1 class="section-title title-top-dots mb-4 mb-md-5 mt-5 slide-from-left-animation"
+              style="color: #003554;">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              HOW <br> WE DO IT
+            </h1>
+
+            <p class="fade-animation mb-4" style="color: #006494;">O2 Media optimizes your digital media in an
+              omni-channel
+              approach which provides numerous benefits, such as breaking
+              down silos and maximizing budget efficiency.</p>
+
+            <p class="fade-animation mb-4" style="color: #006494;">When budgets are optimized across
+              multiple media channels, resources are (re)allocated more effectively, minimizing
+              wasted spending on underperforming platforms, placements, audiences and ad types
+            </p>
+
+            <p class="fade-animation mb-4" style="color: #006494;">The holistic view of performance metrics enables real
+              time
+              data-driven decision-making, helping to refine targeting and
+              content while delivering on your business goals.
+            </p>
+
+            <p class="fade-animation fw-bold text-center" style="color: #003554;">Ultimately, this approach maximizes
+              reach, improves ROI,
+              and strengthens brand sales by meeting shoppers wherever they
+              are in the digital landscape.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section position-relative" id="work">
+    <!-- <section class="section position-relative" id="work">
       <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #92b6d5;">
         <div class="container pt-5 ps-4 ps-md-5 animation-block">
           <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
@@ -279,9 +351,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section bg-white position-relative" id="clients">
+    <!-- <section class="section bg-white position-relative" id="clients">
       <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #92b6d5;">
         <div class="container pt-5 ps-4 ps-md-5 animation-block">
           <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
@@ -329,66 +401,66 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="position-relative" id="team">
-      <div class="section-head pb-0 pb-md-5 pt-5" style="--section-head-bg: #DADADA;">
-        <div class="container pt-5 ps-4 ps-md-5 animation-block">
-          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation" id="
-            style=" --bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
-            OUR <br> TEAM
-          </h1>
-          <div class="row py-4">
-            <div class="col-10 col-md-7">
-              <p class="m-0 fade-animation">I'm a paragraph. Click here to add your own text and edit me.</p>
-              <p class="m-0 fade-animation">
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
-              </p>
+      <div class="section-body section-bg-static pb-md-5"
+        style="--section-bg: url('../img/Background_our team.svg'); --opacity: ;">
+        <div class="container ps-4 ps-md-5 py-5 z-1 position-relative">
+          <div class="pb-0 pb-md-5 pt-5">
+            <div class="container pt-5 animation-block">
+              <h1 class="section-title title-top-dots slide-from-left-animation" style="color: #003554;">
+                <div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                OUR <br> TEAM
+              </h1>
+              <div class="py-4">
+                <p class="m-0 fade-animation" style=" color: #003554;">Our team brings over 40 years of combined
+                  experience in marketing,
+                  demonstrating deep expertise in strategy, client
+                  services, and media operations. Our extensive knowledge in omni-channel marketing enables us to craft
+                  effective
+                  campaigns, drive client satisfaction, and optimize media performance.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="section-body" style="min-height: auto;">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-3 p-0 animation-block">
-            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
-              <img class="card-img rounded-0" src="assets/img/team-1.webp" alt="Card image">
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
-                <h5 class="card-title">David Salazer</h5>
-                <p class="card-text">Social Stratezist</p>
+          <div class="section-body ps-md-3 pe-3 pe-md-0" style="min-height: auto;">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 p-0 animation-block">
+                <div class="card mx-2 mb-2 rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
+                  <img class="card-img rounded-0" src="assets/img/Team_Melinda Clark.png" alt="Card image">
+                  <div
+                    class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
+                    <h5 class="card-title">Melinda Clark</h5>
+                    <p class="card-text">Client Development</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 animation-block">
-            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
-              <img class="card-img rounded-0" src="assets/img/team-2.webp" alt="Card image">
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
-                <h5 class="card-title">Ashley Stewart</h5>
-                <p class="card-text">Community Manager</p>
+              <div class="col-12 col-md-4 p-0 animation-block">
+                <div class="card mx-2 mb-2 rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
+                  <img class="card-img rounded-0" src="assets/img/Team_Jacobi Crisler.png" alt="Card image">
+                  <div
+                    class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
+                    <h5 class="card-title">Jacobi Crisler</h5>
+                    <p class="card-text">Client Development</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 animation-block">
-            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
-              <img class="card-img rounded-0" src="assets/img/team-3.webp" alt="Card image">
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
-                <h5 class="card-title">Patrick Stone</h5>
-                <p class="card-text">OR Manager</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 p-0 animation-block">
-            <div class="card rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
-              <img class="card-img rounded-0" src="assets/img/team-4.webp" alt="Card image">
-              <div
-                class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
-                <h5 class="card-title">Lisa Riley</h5>
-                <p class="card-text">PR Manager</p>
+              <div class="col-12 col-md-4 p-0 animation-block">
+                <div class="card mx-2 mb-2 rounded-0 border-0 bg-dark text-white fade-from-bottom-animation">
+                  <img class="card-img rounded-0" src="assets/img/Team_Alex Ham.png" alt="Card image">
+                  <div
+                    class="card-img-overlay rounded-0 d-flex flex-column align-items-center justify-content-center d-none">
+                    <h5 class="card-title">Alex Ham</h5>
+                    <p class="card-text">Media Operations</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -396,7 +468,7 @@
       </div>
     </section>
 
-    <section class="position-relative" id="facts">
+    <!-- <section class="position-relative" id="facts">
       <div class="section-body section-bg py-0 py-md-5" style="--section-bg: url(../img/bg-3.webp);">
         <div class="container pt-5  ps-4 ps-md-5 animation-block">
           <h1 class="section-title text-dark-black title-top-bar mb-4 mt-5 slide-from-left-animation"
@@ -422,61 +494,69 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="bg-white position-relative pb-4 pb-md-5" id="contact-us">
-      <div class="section-head  py-4 py-md-5 pt-5" style="--section-head-bg: #fff;">
-        <div class="container pt-5  ps-4 ps-md-5 animation-block">
-          <h1 class="section-title text-dark-black title-top-bar slide-from-left-animation"
-            style="--bar-bg: #4E5AC3; --bar-height:12px; --bar-width:50px; --bar-distance:-30px">
-            GET IN <br> TOUCH
-          </h1>
-        </div>
-      </div>
-      <div class="section-body pb-md-5" style="min-height: auto;">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 px-4 px-md-5 mb-5 mb-md-0">
-              <form action="">
-                <div class="mb-2">
-                  <label for="firstName" class="form-label">First Name *</label>
-                  <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="firstName">
-                </div>
-                <div class="mb-2">
-                  <label for="lastName" class="form-label">Last Name *</label>
-                  <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="lastName">
-                </div>
-                <div class="mb-2">
-                  <label for="email" class="form-label">Email *</label>
-                  <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="email">
-                </div>
-                <div class="mb-2">
-                  <label for="subject" class="form-label">Subject</label>
-                  <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="subject">
-                </div>
-                <div class="mb-2">
-                  <label for="message" class="form-label">Enter Your Message</label>
-                  <textarea type="text" rows="3" class="form-control border-black border-2 rounded-0 px-3 py-2"
-                    id="message" style="resize: none;"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary submit-btn ms-auto d-block">Submit</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-12 col-md-6  ps-4 ps-md-5 animation-block">
-              <h3 class="fs-6 letter-spacing-1.5px fw-bold fade-animation">We can't wait to hear from you</h3>
-              <address class="fade-animation">
-                500 Terry Francine Street,<br>
-                CA 94158 <br>
-                San Francisco,
-              </address>
+    <section class="bg-white position-relative" id="contact">
+      <div class="section-body section-bg pb-md-5"
+        style="--section-bg: url('../img/Background_contact.svg'); --opacity: ;">
+        <div class="container pt-5 position-relative z-1 ps-4 ps-md-5 animation-block">
+          <div class="pb-0 pb-md-5 pt-5">
+            <h1 class="section-title mt-5 title-top-dots slide-from-left-animation">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              GET IN <br> TOUCH
+            </h1>
+          </div>
+          <div class="section-body pb-md-5" style="min-height: auto;">
+            <div class="row">
+              <div class="col-12 col-md-6 px-4 px-md-5 mb-5 mb-md-0">
+                <form action="">
+                  <div class="mb-2">
+                    <label for="firstName" class="form-label">First Name *</label>
+                    <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="firstName">
+                  </div>
+                  <div class="mb-2">
+                    <label for="lastName" class="form-label">Last Name *</label>
+                    <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="lastName">
+                  </div>
+                  <div class="mb-2">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="email">
+                  </div>
+                  <div class="mb-2">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control border-black border-2 rounded-0 px-3 py-2" id="subject">
+                  </div>
+                  <div class="mb-2">
+                    <label for="message" class="form-label">Enter Your Message</label>
+                    <textarea type="text" rows="3" class="form-control border-black border-2 rounded-0 px-3 py-2"
+                      id="message" style="resize: none;"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary submit-btn ms-auto d-block">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 col-md-6  ps-4 pb-4 pb-md-0 ps-md-5 animation-block">
+                <h3 class="fs-5 letter-spacing-1.5px fw-bold" style=" color: #003554;">We can't wait to
+                  hear from you!</h3>
+                <!-- <address class="fade-animation">
+                  500 Terry Francine Street,<br>
+                  CA 94158 <br>
+                  San Francisco,
+                </address>
 
-              <address class="fade-animation">
-                <a class="text-dark-black text-decoration-none" href="mailto:info@mysite.com"><b>info@mysite.com</b></a>
-                <br>
-                <a class="text-dark-black text-decoration-none" href="tel:123-456-7890"><b>123-456-7890</b></a>
-              </address>
+                <address class="fade-animation">
+                  <a class="text-dark-black text-decoration-none"
+                    href="mailto:info@mysite.com"><b>info@mysite.com</b></a>
+                  <br>
+                  <a class="text-dark-black text-decoration-none" href="tel:123-456-7890"><b>123-456-7890</b></a>
+                </address> -->
+              </div>
             </div>
           </div>
         </div>
