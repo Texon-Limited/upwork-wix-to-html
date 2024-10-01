@@ -40,6 +40,22 @@ $(document).ready(function () {
     }
   });
 
+  // fix for offcanvas scrolling
+  $('.offcanvas .nav-link').on('click', function (e) {
+    e.preventDefault();
+
+    var target = $(this).attr('href');
+    var targetElement = $(target);
+
+    if (targetElement.length) {
+      $('html, body').animate({
+        scrollTop: targetElement.offset().top
+      }, 300);
+
+      $('#mobile-menu').offcanvas('hide');
+    }
+  });
+
   // Parallax effect for background images
 
   var velocity = 0.2;
