@@ -335,6 +335,10 @@ body {
     min-height: 40vh;
   }
 
+  .section-bg {
+    background-attachment: scroll;
+  }
+
   .hero-title {
     font-size: 37px;
   }
@@ -363,14 +367,18 @@ body {
     display: grid;
   }
 
+  .letter-spacing-sm-1 {
+    letter-spacing: -2px;
+  }
+
 
 }
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgb(70, 90, 195);
+  --bs-btn-bg: #003554;
   --bs-btn-border-radius: 0;
-  --bs-btn-border-color: rgb(70, 90, 195);
+  --bs-btn-border-color: #003554;
   --bs-btn-padding-x: 2.25rem;
   --bs-btn-padding-y: 0.625em;
   --bs-btn-hover-color: #fff;
@@ -382,6 +390,6 @@ body {
   --bs-btn-active-border-color: rgb(60, 60, 78);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgb(70, 90, 195);
-  --bs-btn-disabled-border-color: rgb(70, 90, 195);
+  --bs-btn-disabled-bg: #003554;
+  --bs-btn-disabled-border-color: #003554;
 }

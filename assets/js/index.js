@@ -66,18 +66,26 @@ $(document).ready(function () {
 
     $('.section-background').css('top', -pos * 0.1 + 'px');
 
-    $('.section-bg').each(function () {
-      var $element = $(this);
-      var elementOffset = $element.offset().top;
+    if ($(window).width() > 768) {
+      $('.section-bg').each(function () {
+        var $element = $(this);
+        var elementOffset = $element.offset().top;
 
-      if (elementOffset < pos + windowHeight && elementOffset + $element.height() > pos) {
-        var newPosition = Math.round((elementOffset - pos) * velocity);
-        $element.css('backgroundPosition', '50% ' + newPosition + 'px');
-      }
-    });
+        if (elementOffset < pos + windowHeight && elementOffset + $element.height() > pos) {
+          var newPosition = Math.round((elementOffset - pos) * velocity);
+          $element.css('backgroundPosition', '50% ' + newPosition + 'px');
+        }
+      });
+    } else {
+      $('.section-bg').css('backgroundPosition', 'initial');
+    }
   };
 
-  $(window).bind('scroll', update);
+  // Bind update function to scroll event
+  $(window).on('scroll', update);
+
+  $(document).ready(update);
+
 
 
   // Animations
